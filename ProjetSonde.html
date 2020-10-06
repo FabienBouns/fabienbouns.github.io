@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="icon" type="image/x-icon" href="icone.ico" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <title>Bounoir Fabien</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <menu>
+        <li><a href="accueil.html">Accueil</a></li>
+        <li><a href="#information">Information</a></li>
+        <a class="QRCode" href="https://drive.google.com/file/d/1E0y1c5cKKGdd1HxCXZD0GsiQ3w7lF6ya/view?usp=sharing" onclick="window.open(this.href); return false;" data-micron="pop"><img class="QRCode" src="Qrcode.png" alt="QRCode"></a>
+    </menu>
+
+    <h2 id="Projet">Projet Sonde</h2>
+    <div class="ProfilSonde">
+        <div class="profilePicture">
+            <img class="profilePicture" src="sonde.png" alt="profilPicture">
+        </div>
+        <div class="presentationProjet">
+            <h1>Projet Sonde</h1>
+            <p class="presentation">Le projet Sonde permet de communiquer avec une sonde équipée de différents capteurs.            </p>
+            <p>L'IHM affiche les informations des capteurs dans l'onglet Données. Il est possible de consulter les relevés de mesures sous forme de graphiques.</p>
+            <p>Les clients connectés reçevront périodiquement les mesures de la sonde</p>
+            <p>Langage: C++ &emsp; | &emsp; Framework: <a href='https://www.qt.io/'>QtCreator</a></p>
+        </div>
+    </div>
+    
+    <div class="MeteoEasterEgg">
+        <!-- si tu tapes "météo" sur ton clavier une surprise apparaîtra -->
+    </div>
+
+    <h2 id="information">Information</h2>
+    <div class="Projet">
+        <a title="docSonde" href="./dossierTechniqueSonde.pdf" onclick="window.open(this.href); return false;" ><img class="ProjetPicture1" src="dossierTechniqueSonde.png" alt="Dossier technique darts"></a>
+        <h3>dossier technique</h3>
+        <a title="docSonde" href="https://github.com/FabienBouns/sonde" onclick="window.open(this.href); return false;" ><img class="ProjetPicture2" src="githubSonde.png" alt="Github"></a>
+        <h3>Github</h3>
+    </div>
+
+    <footer><address>website by <a href="mailto:fabienbounoir@epitech.eu">"Bounoir Fabien"</a> - Montpellier - 07.83.01.13.04</address></footer>
+</body>
+
+</html>

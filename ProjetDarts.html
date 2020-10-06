@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="icon" type="image/x-icon" href="icone.ico" />
+    <title>Bounoir Fabien</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <menu>
+        <li><a href="accueil.html">Accueil</a></li>
+        <li><a href="#Video">Video</a></li>
+        <li><a href="#Information">Information</a></li>
+        <a class="QRCode" href="https://drive.google.com/file/d/1E0y1c5cKKGdd1HxCXZD0GsiQ3w7lF6ya/view?usp=sharing" onclick="window.open(this.href); return false;" data-micron="pop"><img class="QRCode" src="Qrcode.png" alt="QRCode"></a>
+    </menu>
+
+    <h2 id="Projet">Projet DARTS</h2>
+    <div class="ProfilDarts">
+        <div class="profilePicture">
+            <img class="profilePicture" src="dart.png" alt="profilPicture">
+        </div>
+        <div class="presentationProjet">
+            <h1>Projet DARTS</h1>
+            <p class="presentation">Le système DARTS est un système numérique permettant de jouer au jeu de fléchettes électroniques. Le joueur peut lancer une partie avec les différentes configurations qu’il souhaite.</p>
+            <p>Les joueurs peuvent visualiser en “temps réel” l’impact des fléchettes sur la cible, les scores, les moyennes des volées, les solutions pour finir la partie.</p>
+            <p>Langage: C++ &emsp; | &emsp; Framework: <a href='https://www.qt.io/'>QtCreator</a></p>
+        </div>
+    </div>
+    <h2 id="Video">Video Presentation</h2>
+    <div class="VideoPresentation">
+        <iframe id=video src="https://www.youtube.com/embed/7VGxQW2TQps?autoplay=1" title="Video Presentation" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <h2 id="Information">Information</h2>
+    <div class="Projet">
+        <a title="docSonde" href="./dossierTechniqueDarts.pdf" onclick="window.open(this.href); return false;" ><img class="ProjetPicture1" src="dossier-techniqueDarts.png" alt="Dossier technique darts"></a>
+        <h3>dossier technique</h3>
+        <a title="docSonde" href="https://github.com/FabienBouns/darts-2020" onclick="window.open(this.href); return false;" ><img class="ProjetPicture2" src="githubDarts.png" alt="Github"></a>
+        <h3>Github</h3>
+    </div>
+
+    <footer><address>website by <a href="mailto:fabienbounoir@epitech.eu">"Bounoir Fabien"</a> - Montpellier - 07.83.01.13.04</address></footer>
+</body>
+
+</html>

@@ -1,0 +1,517 @@
+html {
+    scroll-behavior: smooth;
+}
+
+li {
+    display: inline;
+    padding-left: 2%;
+    font-size: 150%;
+}
+
+li a {
+    text-decoration: none;
+    color: black;
+    padding: 1%;
+}
+
+li a:hover {
+    text-decoration: none;
+    transform: scale(1.2);
+    position: relative;
+    top: 0;
+    color: white;
+    transition: all 0.5s ease-in;
+    background-color: black;
+    border-radius: 10px;
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
+}
+
+menu {
+    background-color: #9147ff;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    margin: 0%;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+img.profilePicture {
+    grid-area: ProfilePicture;
+    height: 400px;
+    width: 400px;
+    margin: 2%;
+    margin-left: 5%;
+}
+
+.presentationProjet h1{
+    margin-top: 0px;
+    padding-top: 4%;
+}
+
+.presentationProjet{
+    grid-area: Presentation;
+    margin-left: 7%;
+}
+
+
+img.ProjetPicture1 {
+    /* display:inline-block;
+    float: left; */
+    height: 50%;
+    width: 50%;
+    margin: 2%;
+    /* margin-left: 30%; */
+    -webkit-transform: scale(1.3);
+    transform: scale(1);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+
+img.ProjetPicture2 {
+    /* display:inline-block;
+    float: right; */
+    height: 50%;
+    width: 50%;
+    margin: 2%;
+    /* margin-right: 30%; */
+    -webkit-transform: scale(1.3);
+    transform: scale(1);
+
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+
+img.ProjetPicture2:hover {
+    margin: 2%;
+    -webkit-transform: scale(1);
+    transform: scale(0.8);
+}
+
+img.ProjetPicture1:hover {
+    margin: 2%;
+    -webkit-transform: scale(1);
+    transform: scale(0.8);
+}
+
+img.QRCode{
+    width: 5.5%;
+    margin: 1%;
+    float: right;
+    margin-top: -2%;
+}
+
+footer {
+    margin-top: 4px;
+    position: fixed;
+    bottom: 0;
+    width: 98.3%;
+    background-color: #9147ff;
+    text-align: center;
+    font-size: 130%;
+    padding: 0.4%;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+.Profil {
+    /* flex-direction: column;
+    columns: 2; */
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    /* grid-template-rows: auto; */
+    grid-template-areas: 
+    "ProfilePicture Presentation";
+
+    margin-top: 2%;
+    padding-right: 2%;
+}
+
+.ProfilDarts {
+    /* flex-direction: column;
+    columns: 2; */
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    /* grid-template-rows: auto; */
+    grid-template-areas: 
+    "ProfilePicture Presentation";
+
+    margin-top: 2%;
+    padding-right: 2%;
+}
+
+.ProfilDarts p {
+    font-size: 170%;
+    padding-left: 2%;
+}
+
+.ProfilDarts h1 {
+    font-size: 200%;
+    color: aliceblue;
+}
+
+.ProfilSonde {
+    /* flex-direction: column;
+    columns: 2; */
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    /* grid-template-rows: auto; */
+    grid-template-areas: 
+    "ProfilePicture Presentation";
+
+    margin-top: 2%;
+    padding-right: 2%;
+}
+
+.ProfilSonde p {
+    font-size: 170%;
+    padding-left: 2%;
+}
+
+.ProfilSonde h1 {
+    font-size: 200%;
+    color: aliceblue;
+}
+
+
+.Projet {
+    flex-direction: column;
+    columns: 2;
+    text-align: center;
+    margin-top: 2%;
+    margin-bottom: 3%;
+}
+
+.Projet h3 {
+    color: aliceblue;
+    font-size: 170%;
+    /* text-align: center; */
+}
+
+.VideoPresentation {
+    margin-top: 2%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    display: flex;
+    justify-content: center;
+}
+
+.zoom {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+
+.zoom:hover {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+}
+
+.Formation {
+    margin-top: 2%;
+    padding: 2%;
+    /* padding-left: 15%; */
+}
+
+.Formation p {
+    font-size: 170%;
+    padding-left: 12%;
+}
+
+.Profil p {
+    font-size: 170%;
+    padding-left: 2%;
+}
+
+.Profil h1 {
+    font-size: 200%;
+    color: aliceblue;
+}
+
+.green {
+    color: rgb(115, 81, 179);
+    font-style: italic;
+}
+
+.blodBlue {
+    color: rgb(68, 68, 196);
+    font-weight: bold;
+}
+
+p {
+    color: aliceblue;
+}
+
+p a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+p#c{
+    margin-top: 1px;
+}
+
+h1 {
+    padding-top: 10%;
+    color: aliceblue;
+}
+
+h2 {
+    text-align: center;
+    font-size: 300%;
+    margin-bottom: 0.7%;
+}
+
+h2:hover {
+    transition: all 0.3s ease-in;
+    color: #9147ff;
+    border-radius: 10px;
+}
+
+div.Competence h3{
+    color: white;
+}
+
+div {
+    background-color: black;
+    border-radius: 25px;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+div.Competence{
+    margin-bottom: 5%;
+    padding: 2%;
+    margin-top: 2%;
+    /* z-index: 10; */
+}
+
+div.langageProgrammation{
+    flex-direction: column;
+    columns: 2;
+}
+
+div.Competence p{
+    font-size: 140%;
+}
+
+body {
+    margin-top: 0px;
+    background-color: #F4F6F7;
+    /* margin: 0%; */
+}
+
+iframe {
+    width: 98% ;
+    height:720px;
+    border: 0;
+}
+
+/* Canvas Competence */
+
+canvas#langageC{
+    background-color: #9147ff;
+    width: 90%;
+    height: 20px;
+}
+
+canvas#langageJava-Python{
+    background-color: #9147ff;
+    width: 70%;
+    height: 20px;
+}
+
+canvas#langageHTML-CSS{
+    background-color: #9147ff;
+    width: 75%;
+    height: 20px;
+}
+
+canvas#langageJavaScript{
+    background-color: #9147ff;
+    width: 70%;
+    height: 20px;
+}
+
+canvas#linux{
+    background-color: #9147ff;
+    width: 70%;
+    height: 20px;
+}
+
+canvas#windows{
+    background-color: #9147ff;
+    width: 80%;
+    height: 20px;
+}
+
+canvas#mac{
+    background-color: #9147ff;
+    width: 65%;
+    height: 20px;
+}
+
+
+/* animation canvas */
+canvas:hover{
+    animation: bgColor 10s linear;
+}
+
+/* Meteo Easter Egg */
+.MeteoEasterEgg{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* grid-template-rows: auto; */
+    grid-template-areas: 
+    "header header"
+    "info icone";
+
+    margin-top: 3%;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+#meteoVille{
+    grid-area: header;
+    color: aliceblue;
+}
+
+#infoMeteo{
+    grid-area: info;
+    padding-left: 20%;
+    padding-top: 2%;
+}
+
+#infoMeteo p {
+    font-size: 160%;
+}
+
+#iconMeteo{
+    grid-area: icone;
+    text-align: center;
+}
+
+
+
+
+
+/* animation */
+footer {
+  background-color: #FF0000;
+  animation: RGBWhiteMode 15s infinite linear;
+}
+
+menu{
+    background-color: #FF0000;
+    animation: RGBWhiteMode 15s infinite linear;
+}
+@keyframes RGBWhiteMode {
+  12.5% {
+    background-color: #FF0000;
+  }
+  25% {
+    background-color: #FFA500;
+  }
+  37.5% {
+    background-color: #FFFF00;
+  }
+  50% {
+    background-color: #7FFF00;
+  }
+  62.5% {
+    background-color: #00FFFF;
+  }
+  75% {
+    background-color: #0000FF;
+  }
+  87.5% {
+    background-color: #9932CC;
+  }
+  100% {
+    background-color: #FF1493;
+  }
+}
+
+
+
+/* DARK MODE */
+
+@media (prefers-color-scheme: dark) {
+    body {
+    background-color: #1f1f23;
+    color: #efeff1;
+    }
+    
+    h2{
+        color: #efeff1;
+    }
+
+    a {
+    color: #5fa9ee;
+    }
+
+    p {
+        color: #efeff1;
+    }
+    
+    p a {
+        color: #efeff1;
+    }
+
+    img {
+        filter: grayscale(20%);
+    }
+
+    div {
+        background-color: #0e0e10;
+    }
+
+    footer {
+        background-color: #B03A2E;
+        animation: RGBDarkMode 15s infinite linear;
+    }
+
+    menu{
+        background-color: #B03A2E;
+        animation: RGBDarkMode 15s infinite linear;
+    }
+
+    li a {
+        color: #efeff1;
+    }
+
+    img.QRCode{
+        filter: invert(1);
+    }
+
+    @keyframes RGBDarkMode {
+        12.5% {
+        background-color: #B03A2E;
+        }
+        25% {
+        background-color: #AF601A;
+        }
+        37.5% {
+        background-color: #B7950B;
+        }
+        50% {
+        background-color: #239B56;
+        }
+        62.5% {
+        background-color: #2874A6;
+        }
+        75% {
+        background-color: #1F618D;
+        }
+        87.5% {
+        background-color: #6C3483;
+        }
+        100% {
+        background-color: #95007C;
+        }
+    }
+}
