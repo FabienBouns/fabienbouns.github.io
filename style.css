@@ -118,11 +118,8 @@ footer {
 }
 
 .Profil {
-    /* flex-direction: column;
-    columns: 2; */
     display: grid;
-    grid-template-columns: 1fr 2fr;
-    /* grid-template-rows: auto; */
+    grid-template-columns: 1fr 1fr;
     grid-template-areas: 
     "ProfilePicture Presentation";
 
@@ -131,11 +128,9 @@ footer {
 }
 
 .ProfilDarts {
-    /* flex-direction: column;
-    columns: 2; */
+
     display: grid;
-    grid-template-columns: 1fr 2fr;
-    /* grid-template-rows: auto; */
+    grid-template-columns: 1fr 1fr;
     grid-template-areas: 
     "ProfilePicture Presentation";
 
@@ -440,7 +435,7 @@ menu{
 
 /* DARK MODE */
 
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: DARK) {
     body {
     background-color: #1f1f23;
     color: #efeff1;
@@ -513,5 +508,62 @@ menu{
         100% {
         background-color: #95007C;
         }
+    }
+}
+
+@media only screen and (max-device-width:800px) {
+    img.QRCode{
+        display: none;
+        width: 5.5%;
+        margin: 1%;
+        float: right;
+        margin-top: -2%;
+    }
+
+    .ProfilDarts{
+        display: block;
+        padding-bottom: 1%;
+    }
+
+    .ProfilSonde{
+        display: block;
+        padding-bottom: 1%;   
+    }
+
+    .Projet {
+     columns: 1;   
+    }
+
+    div.langageProgrammation {
+        flex-direction: column;
+        columns: 1;
+    }
+
+    .Profil {
+        display: block;
+        text-align: center;
+        padding-bottom: 10px;
+    }
+
+    .profilePicture{
+        text-align: center;
+    }
+
+    .Formation p{
+        font-size: 10px;
+    }
+}
+
+@media only screen and (max-device-width:460px) {
+    li {
+        display: block;
+        padding-left: 2%;
+        font-size: 150%;
+        text-align: center;
+        padding-bottom: 10px;
+    }
+
+    .Formation p{
+        font-size: 5px;
     }
 }
